@@ -106,8 +106,8 @@ def add_cards_to_list(tasks: list[MetaTask], trello_list: List):
                 card.comment(comment)
         if hasattr(asana_task, "subtasks"):
             add_subtask_to_card(asana_task.subtasks, card)
-        #if hasattr(asana_task, "done"):
-        #    card.set_closed(closed=True) if asana_task.done else None
+        if hasattr(asana_task, "done"):
+            card.set_closed(closed=True) if asana_task.done else None
 
 all_boards = client.list_boards()
 if BOARD not in [i.name for i in all_boards]:
