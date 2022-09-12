@@ -1,9 +1,7 @@
 import json
-from turtle import write
 from typing import Tuple, TypedDict
 from trello import TrelloClient, Board, List, Card
 from asana_parse import MetaTask, get_metatasks, KEY, TOKEN, BOARD
-from pprint import pprint
 import logging
 
 logging.basicConfig(level=logging.ERROR)

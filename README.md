@@ -2,7 +2,7 @@
 
 This was intended for me to move all my boards from Asana to Trello, and as such, it does just that. Specify your board name, API Key/Secret, and PAT and you'll be on your way!
 
-Note that I have not tested this on List type boards in Asana, only card boards, so YMMV with Lists.
+Note that I have not tested this on List type boards in Asana, only card boards, so YMMV with Lists. Make sure the [requirements](requirements.txt) are installed before running.
 
 ## Usage
 

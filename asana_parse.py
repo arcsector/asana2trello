@@ -1,8 +1,7 @@
 from datetime import datetime
 from typing import List, TypedDict
-import asana, pprint, json
+import asana
 from asana.resources.projects import Projects
-from sys import exit
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
