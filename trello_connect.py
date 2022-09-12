@@ -110,9 +110,10 @@ def add_cards_to_list(tasks: list[MetaTask], trello_list: List):
         #    card.set_closed(closed=True) if asana_task.done else None
 
 all_boards = client.list_boards()
-if BOARD not in all_boards:
+if BOARD not in [i.name for i in all_boards]:
     my_board = client.add_board(BOARD)
-my_board = [i for i in all_boards if i.name == BOARD][0]
+else:
+    my_board = [i for i in all_boards if i.name == BOARD][0]
 board_list_names = [i.name for i in my_board.list_lists()]
 
 if len(board_list_names) > len(set(board_list_names)):
