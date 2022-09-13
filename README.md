@@ -22,6 +22,20 @@ optional arguments:
   --board BOARD         Board name that you want to move from Asana to Trello
 ```
 
+## How to Get a Trello API Key
+
+1. Login into your [Trello](https://trello.com/) Account
+2. Go to this [link](https://trello.com/app-key) to get the API Key
+3. On the same page, click on generate token to generate a token which needs to be used to get authorization for your boards, lists & cards
+
+## How to Get an Asana Personal Access Token
+
+1. Sign into your [Asana Developer Portal](https://app.asana.com/0/developer-console)
+2. Click `+ Create New Personal Access Token`
+3. Type a description of what you’ll use the Personal Access Token for.
+4. Click `Create`
+5. Copy your token.
+
 ## What Gets Moved
 
 - [x] Columns
